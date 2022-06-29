@@ -1,4 +1,4 @@
-# flesh-test-repo
+# Fresh-test-repo
 
 I found the first stable version of Fresh and try.
 
@@ -13,4 +13,4 @@ i tried quick start
 
 
 [deno cli]:(https://deno.land/)
-
+[fresh]: https://fresh.deno.dev/
