@@ -5,7 +5,7 @@ import { tw } from "@twind";
 
 import { Button } from "../components/Button.tsx";
 
-export default function methodList(props: CounterProps) {
+export default function methodList() {
   const methods =  ['','GET','POST','PUT','DELETE']
   const handleChange = (e) => {
         this.setState({selectedValue: e.target.value})
