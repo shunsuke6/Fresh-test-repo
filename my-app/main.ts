@@ -10,6 +10,7 @@ import manifest from "./fresh.gen.ts";
 import { config, setup } from "@twind";
 import { virtualSheet } from "twind/sheets";
 
+
 const sheet = virtualSheet();
 sheet.reset();
 setup({ ...config, sheet });
@@ -24,3 +25,4 @@ function render(ctx: RenderContext, render: InnerRenderFunction) {
 }
 
 await start(manifest, { render });
+
