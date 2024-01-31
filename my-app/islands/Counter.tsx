@@ -28,6 +28,7 @@ export default function Counter(props: CounterProps) {
       >
         +1
       </button>
+      <div class="star"></div>
     </div>
   );
 }
