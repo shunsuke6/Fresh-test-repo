@@ -38,3 +38,25 @@ routesとislandsをそれぞれ格納する格納する重要なフォルダが�
   このフォルダ内のコードは、クライアントとサーバーの両方から実行できる。
 
 最後にstatic/フォルダが作成され、自動的にその後提供される静的ファイルが格納される。
+
+## ローカルで実行
+
+次は実際にプロジェクトを開始。
+
+`deno task start`を実行すれば良い。
+環境変数は自動的に.envから読み込まれる。
+
+```sh
+$ deno task start
+Watcher Process started.
+ 🍋 Fresh ready
+     Local: http://localhost:8000
+```
+
+手動実行は適切なフラグを指定して、main.tsを実行。
+パーミッションフラグの指定が必要。
+
+- `--allow-net`: httpサーバの起動に必要
+- `--allow-read` ディスクからファイルを読み込むために必要
+- `--allow-env`: プロジェクトの設定に使用する環境変数を読み込むために必要
+- `--allow-run`: 開発中にdenoとesbuildにシェルアウトしてタイプストッピングを行うために必要。本番環境では、WebAssemblyバイナリを使用する。
